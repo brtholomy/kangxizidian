@@ -39,7 +39,7 @@ etc.
 Then proceed with the `dictfmt` command:
 
 ```
-dictfmt --utf8 --index-keep-orig --headword-separator '|' -s "康熙字典" -t kangxizidian < kangxizidian.txt
+dictfmt --utf8 --index-keep-orig -s "康熙字典" -c5 --without-info kangxizidian < kangxizidian.txt
 dictzip kangxizidian.dict
 sudo cp kangxizidian.dict.dz kangxizidian.index /usr/share/dictd/
 ```
